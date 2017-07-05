@@ -6,48 +6,66 @@ Author URL:   https://markc.blog
 Template:     twentyseventeen
 Version:      1.0
 Text Domain:  twentyseventeen-child
+
+See https://github.com/markc/twentyseventeen-child
 */
 
-h1.entry-title {
-    margin-left: -2px;
-}
+/* these next 2 only apply to the dark theme to get rid of the aweful thick
+ * underlineon link hover */
 
-.single-post:not(.has-sidebar) #primary,
-.blog:not(.has-sidebar) #primary article {
-    float: none;
-    width: 100%;
-    max-width: 100%;
+a, a:hover,
+a span, a span:hover {
+    box-shadow:none !important;
+    text-decoration:none !important;
 }
-
+a:hover {
+    color: #ffffff !important;
+}
 #post-25,
 div.wrap > header.page-header,
 div.wrap > header.entry-header > h2.entry-title {
     display: none;
 }
-
+.twentyseventeen-front-page.page-one-column .entry-header {
+    margin-bottom: 0;
+}
 .panel-content .wrap {
-    padding-bottom: 0em;
+    padding-bottom: 0;
     padding-top: 2em;
 }
-
 .site-content {
     padding: 2em 0;
 }
-
-.site-info {
-    text-align: center;
+footer#colophon .site-footer {
+    margin: 10em;
+}
+.site-footer .site-info {
     font-style: italic;
+    text-align: center;
     width: 100%;
 }
-
-p code {
-    background-color: #eee;
-    padding: 0.2em 0.4em;
-    border-radius: 2px;
+.widget {
+    padding-bottom: 1.5em;
 }
-
-.page.page-one-column .entry-header,
-.twentyseventeen-front-page.page-one-column .entry-header,
-.archive.page-one-column:not(.has-sidebar) .page-header {
-    margin-bottom: 0em;
+.widget_text {
+    padding-bottom: 0;
+}
+h2.widget-title {
+    margin-bottom: 1em;
+}
+.nav-links {
+    padding: 0;
+}
+.comments-area {
+    padding-top: 1em;
+}
+.post-navigation {
+    margin: 0;
+}
+aside.widget-area {
+    padding-bottom: 0em !important;
+    padding-top: 1em !important;
+}
+.site-footer .wrap {
+    padding: 1em;
 }
