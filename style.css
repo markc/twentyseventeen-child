@@ -1,0 +1,53 @@
+/*
+Theme Name:   TwentySeventeen Child
+Description:  TwentySeventeen Child Theme
+Author:       mc@markc.blog
+Author URL:   https://markc.blog
+Template:     twentyseventeen
+Version:      1.0
+Text Domain:  twentyseventeen-child
+*/
+
+h1.entry-title {
+    margin-left: -2px;
+}
+
+.single-post:not(.has-sidebar) #primary,
+.blog:not(.has-sidebar) #primary article {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+}
+
+#post-25,
+div.wrap > header.page-header,
+div.wrap > header.entry-header > h2.entry-title {
+    display: none;
+}
+
+.panel-content .wrap {
+    padding-bottom: 0em;
+    padding-top: 2em;
+}
+
+.site-content {
+    padding: 2em 0;
+}
+
+.site-info {
+    text-align: center;
+    font-style: italic;
+    width: 100%;
+}
+
+p code {
+    background-color: #eee;
+    padding: 0.2em 0.4em;
+    border-radius: 2px;
+}
+
+.page.page-one-column .entry-header,
+.twentyseventeen-front-page.page-one-column .entry-header,
+.archive.page-one-column:not(.has-sidebar) .page-header {
+    margin-bottom: 0em;
+}
