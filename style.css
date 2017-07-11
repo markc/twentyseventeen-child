@@ -4,7 +4,7 @@ Description:  TwentySeventeen Child Theme
 Author:       mc@markc.blog
 Author URL:   https://markc.blog
 Template:     twentyseventeen
-Version:      1.8
+Version:      1.9
 Text Domain:  twentyseventeen-child
 
 See https://github.com/markc/twentyseventeen-child
@@ -99,5 +99,5 @@ p code {
 }
 .colors-dark .main-navigation li li:hover,
 .colors-dark .main-navigation li li.focus {
-    background: #555555;
+    background: #555555 !important;
 }
