@@ -4,7 +4,7 @@ Description:  TwentySeventeen Child Theme
 Author:       mc@markc.blog
 Author URL:   https://markc.blog
 Template:     twentyseventeen
-Version:      1.6
+Version:      1.7
 Text Domain:  twentyseventeen-child
 
 See https://github.com/markc/twentyseventeen-child
@@ -19,7 +19,7 @@ a span, a span:hover {
     text-decoration:none !important;
 }
 a:hover {
-    color: #00afff !important;
+    color: #00bfff !important;
 }
 .site-title,
 .site-description {
@@ -95,5 +95,5 @@ p code {
     border-radius: 2px;
 }
 .social-navigation + .site-info {
-    margin-left: ;
+    margin-left: 0;
 }
