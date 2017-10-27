@@ -10,5 +10,6 @@
 
 ?>
 <div class="site-info">
-    Copyright &copy; <?php echo date("Y") ?> <?php bloginfo('name'); ?>
+    Copyright &copy; <?php echo date("Y") ?> <?php bloginfo('name'); ?><br>
+    Hosting provided by <a href="https://renta.net" title="RentaNet - Domain, Mail and Web Hosting">RentaNet</a>
 </div><!-- .site-info -->

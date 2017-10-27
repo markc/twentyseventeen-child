@@ -1,13 +1,13 @@
 /*
-Theme Name:   TwentySeventeen Child
-Description:  TwentySeventeen Child Theme
-Author:       mc@markc.blog
+Theme Name:   Twenty Seventeen Child Theme
+Description:  A simple child theme for the default Wordpress Twenty Seventeen parent theme
+Author:       me@markc.blog
 Author URL:   https://markc.blog
 Template:     twentyseventeen
 Version:      2.3
 Text Domain:  twentyseventeen-child
 
-See https://github.com/markc/twentyseventeen-child
+For further information see https://github.com/markc/twentyseventeen-child
 */
 
 /* these next 2 only apply to the dark theme to get rid of the aweful thick
@@ -19,7 +19,7 @@ a span, a span:hover {
     text-decoration:none !important;
 }
 a:hover {
-    color: #00bfff !important;
+    color: #df0000 !important;
 }
 .site-title,
 .site-description {
@@ -90,9 +90,14 @@ input[type="submit"] {
     text-align: center;
 }
 p code {
-    background-color: #7f7f7f;
     padding: 0.2em 0.4em;
     border-radius: 2px;
+}
+.colors-light p code {
+    background-color: #eee;
+}
+.colors-dark p code {
+    background-color: #333;
 }
 .social-navigation + .site-info {
     margin-left: 0;
