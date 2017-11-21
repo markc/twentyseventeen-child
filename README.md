@@ -24,7 +24,7 @@ Now add posts and add a `<!--more->` tag wherever you want to split out the arti
 
 ## Example sites
 
-https://markc.blog
-https://markconstable.com
+- https://markc.blog
+- https://markconstable.com
 
 #### Copyright (C) 2017 Mark Constable <markc@renta.net> (AGLP-3.0)
