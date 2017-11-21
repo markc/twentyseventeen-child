@@ -1,29 +1,13 @@
 /*
 Theme Name:   Twenty Seventeen Child Theme
-Description:  A simple child theme for the default Wordpress Twenty Seventeen parent theme to tighten up vertical space
+Description:  A simple child theme for the default Wordpress Twenty Seventeen parent theme to tighten up vertical space. For further information see https://github.com/markc/twentyseventeen-child
 Author:       me@markc.blog
 Author URL:   https://markc.blog
+License:      GNU Affero General Public License v3
+License URI:  http://www.gnu.org/licenses/agpl-3.0.html
 Template:     twentyseventeen
 Version:      2.5
 Text Domain:  twentyseventeen-child
-
-Customizer adjustments:
-
-In Homepage Settings under Your homepage displays, set to "A static page"
-
-Then under Posts page, select any page, can be blank.
-
-Do not select a Homepage (leave as --Select--)
-
-In Widgets, remove items from Blog Sidebar and populate Footer 1 and Footer 2 as you see fit.
-
-Change any other Customizer settings that you care to. Publish, done.
-
-In Appearance -> Editor, select template-parts -> footer -> site-info.php and manually edit the footer info.
-
-Now add posts and add a "<!--more->" tag wherever you want to split out the article summary.
-
-For further information see https://github.com/markc/twentyseventeen-child
 */
 
 /* Remove the aweful thick black underline on link hover */
