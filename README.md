@@ -1,6 +1,6 @@
-# TwentySeventeen Child
+# Twenty Seventeen Child Theme
 
-A Wordpress v4.8+ TwentySeventeen child theme. If you want to follow along
+A Wordpress v4.9+ TwentySeventeen child theme. If you want to follow along
 and make your own modifications then please **Read This Fine Manual**...
 
 https://codex.wordpress.org/Twenty_Seventeen

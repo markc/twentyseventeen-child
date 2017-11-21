@@ -1,82 +1,86 @@
 /*
 Theme Name:   Twenty Seventeen Child Theme
-Description:  A simple child theme for the default Wordpress Twenty Seventeen parent theme
+Description:  A simple child theme for the default Wordpress Twenty Seventeen parent theme to tighten up vertical space
 Author:       me@markc.blog
 Author URL:   https://markc.blog
 Template:     twentyseventeen
-Version:      2.3
+Version:      2.5
 Text Domain:  twentyseventeen-child
+
+Customizer adjustments:
+
+In Homepage Settings under Your homepage displays, set to "A static page"
+
+Then under Posts page, select any page, can be blank.
+
+Do not select a Homepage (leave as --Select--)
+
+In Widgets, remove items from Blog Sidebar and populate Footer 1 and Footer 2 as you see fit.
+
+Change any other Customizer settings that you care to. Publish, done.
+
+In Appearance -> Editor, select template-parts -> footer -> site-info.php and manually edit the footer info.
+
+Now add posts and add a "<!--more->" tag wherever you want to split out the article summary.
 
 For further information see https://github.com/markc/twentyseventeen-child
 */
 
-/* these next 2 only apply to the dark theme to get rid of the aweful thick
- * underline on link hover */
-
-a, a:hover,
-a span, a span:hover {
-    box-shadow:none !important;
+/* Remove the aweful thick black underline on link hover */
+a:hover, a span:hover {
+    color: rgba(223, 0, 0, 1) !important;
     text-decoration:none !important;
+    box-shadow: inset 0 -1px 0 rgba(223, 0, 0, 1) !important;
+    transition: color 500ms ease-in, box-shadow 500ms ease-in-out;
 }
-a:hover {
-    color: #df0000 !important;
-}
+
+/* Make page title and description stand out on white background */
 .site-title,
 .site-description {
     text-shadow: 0 1px 1px #000000;
 }
-.twentyseventeen-front-page.page-one-column .entry-header {
-    margin-bottom: 0;
+
+/* Don't change the site title on hover */
+.site-title a:hover {
+    color: #fff !important;
+    box-shadow: none !important;
 }
-.panel-content .wrap {
-    padding-bottom: 0;
-    padding-top: 2em;
+
+/* Remove page and category titles */
+.page-header {
+    display: none !important;
 }
+
+/* Tighten gap above content */
 .site-content {
-    padding: 2em 0;
+    padding: 1.5em 0 0 !important;
 }
-footer#colophon .site-footer {
-    margin: 10em;
+
+/* Tighten area under article title and content */
+.entry-header {
+    padding: 0 !important;
 }
-.site-footer .site-info {
-    font-style: italic;
-    text-align: center;
-    width: 100%;
+
+/* Tighten gap between article content and more-link */
+.entry-content .more-link:before {
+    margin-top: 0.5em !important;
 }
-.widget {
-    padding-bottom: 1.5em;
+
+/* Remove large gap at the end of articles */
+.site-main article {
+    float: none !important;
+    padding-bottom: 0 !important;
+    width: 100% !important;
 }
-.widget_text {
-    padding-bottom: 0;
+
+/* General content width */
+#primary {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 740px !important;
 }
-h2.widget-title {
-    margin-bottom: 1em;
-}
-.nav-links {
-    padding: 0;
-}
-.comments-area {
-    padding-top: 1em;
-}
-.post-navigation {
-    margin: 0;
-}
-aside.widget-area {
-    padding-bottom: 0em !important;
-    padding-top: 1em !important;
-}
-.site-footer .wrap {
-    padding: 1em;
-}
-.link-more {
-    margin-top: -1em;
-    margin-bottom: 0;
-    font-style: italic;
-    font-size: 90%;
-}
-.twentyseventeen-front-page .panel-content .recent-posts article {
-    margin-bottom: 1.5em;
-}
+
+/* Make input form elements smaller */
 input, textarea {
     padding: 0.3em !important;
 }
@@ -84,11 +88,40 @@ input[type="submit"] {
     padding: 0.75em 1.25em !important;
 }
 .search-form .search-submit {
-    padding: 0.25em 1em;
+    padding: 0.25em 1em !important;
 }
+
+/* Tighten gap between widget title and content */
+h2.widget-title {
+    margin-bottom: 0 !important;
+}
+
+/* Titghten gap under each widget */
+.widget {
+    padding-bottom: 2em !important;
+}
+
+/* Remove featured image from single post page */
+.single-featured-image-header {
+    display: none !important;
+}
+
+/* Remove from top of comments area */
+#comments {
+    padding-top: 0.5em !important;
+}
+
+/* Remove space above widgets */
+.widget-area {
+    padding: 0!important;
+}
+
+/* Center image caption text */
 .wp-caption .wp-caption-text {
     text-align: center;
 }
+
+/* Add markup for Mardown code area */
 p code {
     padding: 0.2em 0.4em;
     border-radius: 2px;
@@ -99,25 +132,27 @@ p code {
 .colors-dark p code {
     background-color: #333;
 }
-.social-navigation + .site-info {
-    margin-left: 0;
+
+/* Tighten up comment category title */
+.entry-footer {
+    margin-top: 0.5em !important;
+    padding: 0.5em 0!important;
 }
-/*
-.colors-dark .main-navigation li li:hover,
-.colors-dark .main-navigation li li.focus {
-    background: #555555 !important;
+
+/* Tighten up the prev/next post area */
+.post-navigation {
+    margin: 0!important;
 }
-*/
-.main-navigation li li:hover,
-.main-navigation li li.focus {
-    background: #3f3f3f !important;
+
+/* Less space before the footer area */
+.site-footer {
+    margin-top: 0 !important;
 }
-.page.page-one-column .entry-header {
-    margin-bottom: 1em;
-}
-h2 {
-    padding: 0;
-}
-ul, ol {
-    padding-left: 1em;
+
+/* Center site-info in footer */
+.site-info {
+    font-style: italic !important;
+    float: none !important;
+    text-align: center !important;
+    width: 100% !important;
 }
