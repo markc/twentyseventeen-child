@@ -11,3 +11,6 @@ add_action( 'wp_enqueue_scripts', 'markc_blog_enqueue_child_styles' );
 
 remove_action('admin_color_scheme_picker', 'admin_color_scheme_picker');
 add_action('admin_head', function() { echo '<style>.form-table th, .form-table td { padding: 0.25em; }</style>'; });
+
+function wp_mail_from_filter($email){return "admin@markconstable.com";}
+add_filter("wp_mail_from", "wp_mail_from_filter");
